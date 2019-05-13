@@ -29,6 +29,10 @@ inoremap <C-t>     <Esc>:tabnew<CR>
 nnoremap <C-n>   :tabnext<CR>
 inoremap <C-n>   <Esc>:tabnext<CR>i
 nnoremap <Leader>s      :SyntasticToggleMode<CR>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 map <Leader>t <plug>NERDTreeTabsToggle<CR>
 
 
@@ -73,6 +77,7 @@ let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_root_markers = ['.ctrlp']
 let g:ctrlp_max_files=0
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 "
 " NEDR Tree

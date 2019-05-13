@@ -21,7 +21,7 @@ Update by pulling from GIT and updating recursively all submodules. YouCompleteM
 ```sh
 cd .vimrc
 git pull origin master
-git submodule update --init --recursive
+git pull --recurse-submodules
 cd bundle/YouCompleteMe
 ./install.sh
 ```
